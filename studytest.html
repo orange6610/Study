@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* 內减模式 */
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f3f5f7;
+        }
+
+        /* 版心 */
+        .wrapper {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: #050505;
+        }
+
+        /* 头部 */
+        .header {
+            height: 42px;
+            /* margin-top: 30px;
+    margin-bottom: 30px; */
+            margin: 30px auto;
+            background-color: aqua;
+        }
+
+        h1 {
+            float: left;
+        }
+
+        /* 导航 */
+        .nav {
+            float: left;
+            margin-left: 70px;
+            height: 42px;
+            background-color: #bfbfbf;
+        }
+
+        .nav li {
+            float: left;
+            margin-right: 26px;
+        }
+
+        .nav li a {
+            display: block;
+            padding: 0 9px;
+            height: 42px;
+            line-height: 42px;
+            /* border-bottom: 2px solid #00a4ff; */
+
+            font-size: 18px;
+            color: #050505;
+        }
+
+        .nav li a:hover {
+            border-bottom: 2px solid #00a4ff;
+        }
+
+        /* 搜索 */
+        .search {
+            float: left;
+            margin-left: 59px;
+            width: 412px;
+            height: 40px;
+            border: 1px solid #00a4ff;
+        }
+
+        .search input {
+            float: left;
+            padding-left: 20px;
+            /* 左右加一起的尺寸要小于等于410 */
+            width: 360px;
+            height: 38px;
+            border: 0;
+            background-color: antiquewhite;
+        }
+
+        /* 控制placeholder的样式 */
+        .search input::placeholder {
+            font-size: 14px;
+            color: #bfbfbf;
+        }
+
+        .search button {
+            float: left;
+            width: 50px;
+            height: 40px;
+            background-image: url(../images/btn.png);
+            border: 0;
+        }
+
+        .user {
+            float: right;
+            margin-right: 35px;
+            height: 42px;
+            line-height: 42px;
+            background-color: chartreuse;
+        }
+
+        .user img {
+            /* 调节图片垂直对齐方式, middle:居中 */
+            vertical-align: middle;
+        }
+
+        .test {
+            width: 1200px;
+            background-color: #00a4ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header wrapper">
+        <h1>
+            <a href="#"><img src="./images/logo.png" alt=""></a>
+        </h1>
+        <!-- 导航 -->
+        <div class="nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">职业规划</a></li>
+            </ul>
+        </div>
+        <!-- 搜索 -->
+        <div class="search">
+            <input type="text" placeholder="输入关键词"><button></button>
+        </div>
+        <!-- 用户 -->
+        <div class="user">
+            <img src="./images/user.png" alt="">
+            <span>lilei</span>
+        </div>
+    </div>
+    <div class="test">hello</div>
+</body>
+
+</html>
